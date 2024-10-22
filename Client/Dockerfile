@@ -6,7 +6,9 @@ COPY . /app
 
 ENV REACT_APP_REST=/api
 
-RUN npm install && npm i -g serve
+RUN npm install
+
+RUN npm i -g serve
 
 RUN npm run build
 
